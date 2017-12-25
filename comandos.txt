@@ -32,10 +32,7 @@ git diff  // git diff --staged
 Compartilhar reositorio
 
 git remote add origin https://github.com/amaranteDan/Comandos-Linux.git
-git push origin master
+git push origin master 
 
-Listar arquivos do diretorio
-
-ls -lha 
 
 

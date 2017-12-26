@@ -80,6 +80,53 @@ git reset --hard (desfaz todas as alteracoes no arquivo)
 Desfazer alteracoes ja commitadas
 
 git revert --no-edit numero.do ultimo commit
+----------------------------------------------------------
+Criando um Repositorio remoto
+
+Sera criado o arquivo no pc que servira de servidor 
+
+git init --bare Linux.git (--bare para evitar criar que seja criado
+uma working tree e o commits sejam realizados diretamente
+no servidor)
+
+Caso especial - Adicionando o servidor local
+
+git remote add servidor file://192.168.1.\Linux.git (dar cd para entrar no diretorio)
+git remote - para listar os repositorios
+----------------------------------------------------------
+Para renomear respositorios remotos
+
+git remote rename servidor outronome
+git remote para ver o outro nome
+----------------------------------------------------------
+
+Alterar a url
+
+git remote set-url servidor file://192.168.1.10/Linux.git
+git remote -v
+----------------------------------------------------------
+
+Enviar commits para o repositorio remoto
+
+git push servidor master
+----------------------------------------------------------
+Clonar repositorio remoto
+
+git clone file://192.168.1.3/Linux.git
+---------------------------------------------------------
+
+Sincronizar repositorio remoto
+
+git pull servidor master
+---------------------------------------------------------
+Protocolos
+Local - git clone file://192.168.1.3/Linux.git
+
+ssh - usuario@servidor root@192.168.1.3:/Linux.git
+
+
+
+
 
 
 

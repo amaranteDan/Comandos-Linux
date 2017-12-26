@@ -34,5 +34,23 @@ Compartilhar reositorio
 git remote add origin https://github.com/amaranteDan/Comandos-Linux.git
 git push origin master 
 
+Atualizacoes no arquivo usar esse comando
+
+git push origin master
+
+-------------------------------------------------------------------------
+Fazendo o clone do arquivo
+
+git clone https://github.com/amarantedana/Comandos-Mysql.git
+
+Para ver modificaoes 
+
+git log
+----------------------------------------------------------
+
+
+
+
+
 
 

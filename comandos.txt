@@ -48,6 +48,39 @@ Para ver modificaoes
 git log
 ----------------------------------------------------------
 
+Remover arquivos do git
+
+git rm nome.do.arquivo
+git commit -m "Removendo arquivos"
+-----------------------------------------------------------
+Renomear arquivos
+git mv nome.arquivo novo.nome.arquivo
+git commit -am "Renomeando arquivos"
+----------------------------------------------------------
+Mover um arquivo
+
+git mv nome.arquivo diretorio/nome.arquivo
+git status
+git commit "Movendo arquivo."
+----------------------------------------------------------
+Desfazer alteracoes
+
+git checkout -- nome.arquivo (As que nao estiverem na area do staged)
+git status
+----------------------------------------------------------
+Recuperar arquivos deletados
+
+git checkout -- nome.arquivo
+
+Remover da area do staged
+
+git reset -- nome.arquivo (preserva tudo que foi modificado)
+git reset --hard (desfaz todas as alteracoes no arquivo)
+
+Desfazer alteracoes ja commitadas
+
+git revert --no-edit numero.do ultimo commit
+
 
 
 

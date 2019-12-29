@@ -125,8 +125,14 @@ Local - git clone file://192.168.1.3/Linux.git
 ssh - usuario@servidor root@192.168.1.3:/Linux.git
 
 
+#############################################################
+Comandos Linux 103 para Leitura de arquivos.
 
-
+Podemos usar:
+cat 
+head "Visualiza a parte inicial do texto. Pode usar o -3 para deteminar a quantidade de linhas"
+tail -f 
+##############################################################
 
 
 

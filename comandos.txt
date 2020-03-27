@@ -25,11 +25,16 @@ ver logs
 
 git log ou git log -n // git log --online
 
+git lo --graph
+
+git shortlog -sn (Verifica todos que fizeram commits)
+git show "hash do arquivo"  - Ver modificacoes no arquivo.
+
 Ver alteracoes
 
 git diff  // git diff --staged
-
-Compartilhar reositorio
+git diff --name-only
+Compartilhar repositorio
 
 git remote add origin https://github.com/amaranteDan/Comandos-Linux.git
 git push origin master 

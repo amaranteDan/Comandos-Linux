@@ -139,6 +139,25 @@ head "Visualiza a parte inicial do texto. Pode usar o -3 para deteminar a quanti
 tail -f 
 ##############################################################
 
+**************************************************************
+Comandos de Linux para a Certificação LPI
+
+ls - listar diretorios
+ls -al
+cd " change directory"
+pwd - diretorio atual
+mkdir - criar diretorio
+rm - remover arquivo Ex: rm -rf "remove diretorio e arquivos"
+rm -r
+rm -f  "forçando a exclusão"
+rm -rf
+cp - copia de arquivo
+cp -r copia diretorio - 
+mv dupla funcao (usado para renomear ou mover)
+ln -s "arquivo" - criar link  -verificar o comando para desfazer o link
+rm -d "link" - remove o link
+touch - cria ou atualiza arquivo "Ex touch teste.txt"
+
 
 
 

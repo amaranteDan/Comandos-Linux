@@ -158,6 +158,26 @@ ln -s "arquivo" - criar link  -verificar o comando para desfazer o link
 rm -d "link" - remove o link
 touch - cria ou atualiza arquivo "Ex touch teste.txt"
 
+######################################################################
+Revisao LPI - 
+
+GPL - Gnu General Public License
+
+4 Liberdades
+
+Liberdade 0 - Executar o programa para qualquer proposito.
+Liberdade 1 - Estudar como o programa funciona e adaptar lo a suas necessidades.
+Liberdade 2 - Liberdade de distribuir copias para ajudar o proximo.
+Liberdade 3 - Aperfeiçoar o programa e liberar os seus aperfeiçoamentos de modo que toda a comunidade se beneficie.
+
+FSF - Free Software Foundation
+
+101.1 Determinar e Configurar Hardware.
+
+BIOS - Basc Input/Output - Administrar entrada e saida do hardware via barramentos.
+
+Diretorios /proc /sys - Diretorios Virtuais criados na Inicialização.
+
 
 
 

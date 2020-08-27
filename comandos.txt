@@ -178,9 +178,78 @@ BIOS - Basc Input/Output - Administrar entrada e saida do hardware via barrament
 
 Diretorios /proc /sys - Diretorios Virtuais criados na Inicialização.
 
+-> Diretorio /proc.
 
+dr-xr-xr-x  3 root       root                     0 ago 27 00:16 acpi
+dr-xr-xr-x 12 root       root                     0 ago 27 00:17 asound
+-r--r--r--  1 root       root                     0 ago 27 00:43 buddyinfo
+dr-xr-xr-x  4 root       root                     0 ago 27 00:17 bus
+-r--r--r--  1 root       root                     0 ago 27 00:16 cgroups
+-r--r--r--  1 root       root                     0 ago 27 00:16 cmdline
+-r--r--r--  1 root       root                     0 ago 27 00:43 consoles
+-r--r--r--  1 root       root                     0 ago 27 00:17 cpuinfo
+-r--r--r--  1 root       root                     0 ago 27 00:43 crypto
+-r--r--r--  1 root       root                     0 ago 27 00:16 devices
+-r--r--r--  1 root       root                     0 ago 27 00:43 diskstats
+-r--r--r--  1 root       root                     0 ago 27 00:43 dma
+dr-xr-xr-x  3 root       root                     0 ago 27 00:43 driver
+dr-xr-xr-x  3 root       root                     0 ago 27 00:43 dynamic_debug
+-r--r--r--  1 root       root                     0 ago 27 00:43 execdomains
+-r--r--r--  1 root       root                     0 ago 27 00:43 fb
+-r--r--r--  1 root       root                     0 ago 27 00:16 filesystems
+dr-xr-xr-x  5 root       root                     0 ago 27 00:17 fs
+-r--r--r--  1 root       root                     0 ago 27 00:17 interrupts
+-r--r--r--  1 root       root                     0 ago 27 00:43 iomem
+-r--r--r--  1 root       root                     0 ago 27 00:43 ioports
+dr-xr-xr-x 25 root       root                     0 ago 27 00:17 irq
+-r--r--r--  1 root       root                     0 ago 27 00:17 kallsyms
+-r--------  1 root       root       140737471586304 ago 27 00:16 kcore
+-r--r--r--  1 root       root                     0 ago 27 00:43 keys
+-r--r--r--  1 root       root                     0 ago 27 00:43 key-users
+-r--------  1 root       root                     0 ago 27 00:17 kmsg
+-r--------  1 root       root                     0 ago 27 00:43 kpagecgroup
+-r--------  1 root       root                     0 ago 27 00:43 kpagecount
+-r--------  1 root       root                     0 ago 27 00:43 kpageflags
+-r--r--r--  1 root       root                     0 ago 27 00:43 loadavg
+-r--r--r--  1 root       root                     0 ago 27 00:43 locks
+-r--r--r--  1 root       root                     0 ago 27 00:17 meminfo
+-r--r--r--  1 root       root                     0 ago 27 00:43 misc
+-r--r--r--  1 root       root                     0 ago 27 00:17 modules
+lrwxrwxrwx  1 root       root                    11 ago 27 00:17 mounts -> self/mounts
+-rw-r--r--  1 root       root                     0 ago 27 00:17 mtrr
+lrwxrwxrwx  1 root       root                     8 ago 27 00:16 net -> self/net
+-r--------  1 root       root                     0 ago 27 00:43 pagetypeinfo
+-r--r--r--  1 root       root                     0 ago 27 00:43 partitions
+dr-xr-xr-x  5 root       root                     0 ago 27 00:43 pressure
+-r--r--r--  1 root       root                     0 ago 27 00:43 sched_debug
+-r--r--r--  1 root       root                     0 ago 27 00:43 schedstat
+lrwxrwxrwx  1 root       root                     0 ago 27 00:16 self -> 1326
+-r--------  1 root       root                     0 ago 27 00:43 slabinfo
+-r--r--r--  1 root       root                     0 ago 27 00:43 softirqs
+-r--r--r--  1 root       root                     0 ago 27 00:43 stat
+-r--r--r--  1 root       root                     0 ago 27 00:16 swaps
+dr-xr-xr-x  1 root       root                     0 ago 27 00:16 sys
+--w-------  1 root       root                     0 ago 27 00:17 sysrq-trigger
+dr-xr-xr-x  5 root       root                     0 ago 27 00:43 sysvipc
+lrwxrwxrwx  1 root       root                     0 ago 27 00:16 thread-self -> 1326/task/1326
+-r--------  1 root       root                     0 ago 27 00:43 timer_list
+dr-xr-xr-x  6 root       root                     0 ago 27 00:43 tty
+-r--r--r--  1 root       root                     0 ago 27 00:16 uptime
+-r--r--r--  1 root       root                     0 ago 27 00:17 version
+-r--------  1 root       root                     0 ago 27 00:43 vmallocinfo
+-r--r--r--  1 root       root                     0 ago 27 00:43 vmstat
+-r--r--r--  1 root       root                     0 ago 27 00:43 zoneinfo
 
+Diretorio - /sys
 
-
-
-
+drwxr-xr-x   2 root root 0 ago 27 00:16 block
+drwxr-xr-x  32 root root 0 ago 27 00:16 bus
+drwxr-xr-x  48 root root 0 ago 27 00:16 class
+drwxr-xr-x   4 root root 0 ago 27 00:16 dev
+drwxr-xr-x  15 root root 0 ago 27 00:16 devices
+drwxr-xr-x   5 root root 0 ago 27 00:16 firmware
+drwxr-xr-x   7 root root 0 ago 27 00:16 fs
+drwxr-xr-x   2 root root 0 ago 27 00:47 hypervisor
+drwxr-xr-x  13 root root 0 ago 27 00:16 kernel
+drwxr-xr-x 122 root root 0 ago 27 00:16 module
+drwxr-xr-x   3 root root 0 ago 27 00:17 power

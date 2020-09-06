@@ -176,6 +176,82 @@ FSF - Free Software Foundation
 
 BIOS - Basc Input/Output - Administrar entrada e saida do hardware via barramentos.
 
+* Arquitetura do Sistema
+
+cat /proc/scsi/scsi
+
+cat /proc/modules
+
+lshw
+lscpu
+lspci
+lspci -v -s 00:1a.0 Ex
+
+* Listar modulos carregados
+
+lsmod
+lsmod |grep ehci_pci
+
+modprobe -r (Insere ou remove modulo)
+modprobe -r ehci_pci
+
+lspci|grep USB
+
+*Habilitar modulo novamente
+
+modprobe ehci_pci
+
+*Remover modulos do kernel
+Ex.
+rmmod usbcore
+
+*Ferramentas para manipular USB
+
+lsusb
+
+lsusb -v -d 1bcf:0007 (descricção detalhada do dispositivo)
+
+lsusb -t
+
+************************************************************************
+*Diretorios que podem ser separados da raiz /boot /home /opt /root
+ /tmp /usr /var
+
+*Diretorios que não pode ser separados da raiz
+/bin /dev /etc /lib /media /mnt /proc /sbin /sys
+*
+***********************************************************************
+
+
+102.3 Gerenciando bibliotecas
+
+
+Determinar bibliotecas dinamicas associadas
+
+Ex ldd /bin/ls
+
+ldd /usr/sbin/sshd
+
+ldd ./sshd
+
+*Ientificar bibliotecas compartilhadas
+
+ls /usr/lib |grep -F .so
+ls /lib | grep -F .so
+
+*Descobrindo as bibliotecas do comando ps
+
+ldd /bin/ps
+
+Atualizar o cache das bibliotecas
+
+ldconfig
+
+*Listar bibliotecas disponiveis
+
+ldconfig -p
+
+
 Diretorios /proc /sys - Diretorios Virtuais criados na Inicialização.
 
 -> Diretorio /proc.

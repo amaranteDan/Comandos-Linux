@@ -212,6 +212,10 @@ lsusb
 lsusb -v -d 1bcf:0007 (descricção detalhada do dispositivo)
 
 lsusb -t
+************************************************************************
+*101.2 Boot do Sistema
+
+Bios - Bootloader
 
 ************************************************************************
 *Diretorios que podem ser separados da raiz /boot /home /opt /root
@@ -234,7 +238,7 @@ ldd /usr/sbin/sshd
 
 ldd ./sshd
 
-*Ientificar bibliotecas compartilhadas
+*Identificar bibliotecas compartilhadas
 
 ls /usr/lib |grep -F .so
 ls /lib | grep -F .so

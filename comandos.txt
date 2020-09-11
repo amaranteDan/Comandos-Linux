@@ -217,6 +217,46 @@ lsusb -t
 
 Bios - Bootloader
 
+O bios espera os primeiros 440 bytes do primeiro disco de armazenamento
+440 bytes da MBR (Master Boot Record).
+
+Inicialização fica assim:
+
+1- POST é executado;
+2 - O Bios ativa os dispositivos necessario, como teclado, mouse, monitor
+e o dispositivo de armazenamento.
+
+3 - O Bios Carrega o primeiro estagio do bootloader( 440 bytes MBR)
+    
+4 - O primeiro estagio aciona o segundo estagio: Responsavel pelas opções
+    de boot e carregar o Kernel.
+
+UEFI - Unified Extensible Firmware Interface
+
+Uefi ignora dados presentes na MBR, levando em conta definições presentes
+em uma memoria de armazenamento não volatil, (NVRAM)
+(Luciano Antonio Siqueira) Certificação LPI 6 Edição)
+
+
+Os aplicativos EFi devem ser armazenados em sistemas compativeis
+FAT12, FAT16, FAT32 e ISO-9660 midias opticas.
+
+Vantagens:
+So consegue usar sistemas 64bits;
+Secure Boot
+Suporte a GPT
+CSM Compatibility Support Module
+Partição acima de 1GB.
+Verificar se maquina tem modulo
+
+test -d /sys/firmware/uefi && echo "EFI Boot" || "Bios Boot"
+
+Instalar o pacote
+grub-uefi	
+
+
+
+
 ************************************************************************
 *Diretorios que podem ser separados da raiz /boot /home /opt /root
  /tmp /usr /var

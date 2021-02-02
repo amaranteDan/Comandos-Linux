@@ -199,3 +199,5 @@ ex: touch -m -t 200012251425 arquivo - altera para a data desejada
 ex touch -a -d "Jan 1 12:00:00 1999" arquivo
 
 stat Topico103-Comandos.txt
+
+************************************************************************

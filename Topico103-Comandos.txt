@@ -130,4 +130,72 @@ para juntar tudo em otro arquivo uso (Ex: cat parte_* > teste2.txt)
 
 uniq - mostra conteudo dos arquivos. opção -u mostra apenas as linhas que não se repetem.
 
+cut - Filtra arquivos em coluna, por caracteres ou por posição de campo.
 
+Ex: cut -d ':' -f 1,3 /etc/group - mostrar campos posição 1,3 separados por : do /etc/group
+Ex2 cut -d ':' -f 1,3 --output-delimiter ' = ' /etc/group - Troco o separador original por =
+
+paste - Concatena arquivos lado a lado.
+Ex paste um.txt dois.txt (Observação - cada linha tem que estar numerada)
+
+join - Similar ao paste, mas trabalha especificamente com campos.
+Ex join -1 1 -2 1 -o '1.2 2.2' um.txt dois.txt
+-o Especifica qual campo quero mostrar - No exemplo 1 coluna de cada arquivo
+-1 / -2 se refere aos arquivos 1 se refere a coluna.
+
+Expand - Define a Tabulação. opção -t
+Ex expand -t 1 texto2.txt - Retira a tabulação
+
+tr - converter caracteres 
+Ex echo HOJE E DIA DE JOGO | tr '[A-Z]' '[a-z]' - O que esta em maisculo p/ minusculo
+Ex2 echo HOJE E DIA DE JOGO DO SANTOS | tr '[:upper:]' '[:lower:]'
+Ex3 echo HoJe E DIa dE jOgO dO sAnToS | tr '[:upper:]' '[:lower]' | tr '[:blank:]' '_'
+tr -s - elimina espaços em branco
+tr -d elimina terminações de textos windows
+
+pr Prepara arquivo para impressão - Padrao 66 linhas por pagina
+pr -l altera a quantidade de linhas por pagina
+pr -w altera o comprimento maximo das linhas.
+
+fmt - formata um texto para um padrao de caracteres por linha. Padrão 75
+
+sort Ordena alfabeticamente.
+sort -n ordena numericamente
+
+Paginador less | more
+/ voltar a fazer pesquisa
+? busca retroativa
+shift + f incluir texto
+ctrl + c leitura convencional
+
+Verificar checksum
+md5sum
+sha256sum
+sha512sum
+-c opcao para indicar arquivo
+********************************************************************************************
+103.3 Gerenciamento Basico de arquivos - Peso 4
+
+ls
+ls -l
+ls -lh
+* representa qualquer sequencia
+? substitui um caracter Ex ls /dev/sda? Mostra todos exceto sda
+[] permite indicar uma lista de caracteres - Ex ls /dev/sd[abc]
+{} lista de termos que podem ser separados por virgula Ex ls /dev/{hda,fd0}
+! exclui da operação
+\ escape - caracter escapado
+
+Identificação de Arquivos
+
+file - identificar o tipo de arquivo Ex - file /boot/memtest86+-5.01
+
+touch - Altera o timestamp de um arquivo.
+alterar data de modificacao -m
+altera data de acesso -a
+outros valores de tempo -t
+ ex: touch -m arquivo altera para a data atual
+ex: touch -m -t 200012251425 arquivo - altera para a data desejada
+ex touch -a -d "Jan 1 12:00:00 1999" arquivo
+
+stat Topico103-Comandos.txt

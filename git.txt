@@ -204,3 +204,103 @@ Low-level Commands / Internal Helpers
    sh-i18n              Git's i18n setup code for shell scripts
    sh-setup             Common Git shell script setup code
    stripspace           Remove unnecessary whitespace
+
+
+***Usando os comandos.
+
+Verificando o estatus
+
+#git status
+
+***Adicionando arquivo a branch
+
+#git add arq ou git add . -> Vai adicionar tdo que estiver no diretorio atual
+
+***Comitar o arquivos modificados.
+
+#git commit -m "mensagem"
+
+***Verificar as alterações realizadas
+
+#git log
+
+***Apontando e Gravando no repositorio remoto
+
+#git remote add origin https://github.com/seu_usuario_github
+
+***Enviando as alterações
+#git push origin master ->fornecer usuario e senha
+
+***Criando um repositorio local
+
+#mkdir meu_git
+
+#cd meu_git
+
+#git init  -> inicia o repositorio local
+
+#ls -lha -> Lista os arquivos
+
+#git status
+
+***gitignore - Diretorio onde são guardados os arquivos temporarios e ignorados
+
+#git add .gitignore -> Dentro dele so marcar como *.arq para ser ignorado
+
+
+#git commit -am "Mensagem" -a adiciona ao stage apenas as mudanças rastreadas. Novo arquivos
+precisam do git add
+
+#git log -> Verifica o historico de alteração
+
+#git log -n 2 -> Mostra apenas os ultimos 2 commits
+
+#git log --oneline -> Mostra um resumo conciso
+
+#git log --stat -> Mostra um resumo dos arquivos alterados
+
+***Juntando varias opções
+
+#git log -n 2 --oneline --stat
+
+#Pergunta - Qual a diferença entre git status e git log?
+git status mostra arquivos dentro da area de stage e fora esperando para serem comitados.
+git log mostra o historico das mudanças efetivamente gravadas no repositorio.
+
+#git diff -> Mostra mudanças ainda não comitadas.
+
+#git diff --staged -> Mostra as mudanças na area de stage
+
+***Verificando as alterações dentro e fora do stage- Nesse caso precisa do codigo. EX
+
+#git log -n 1 --oneline
+
+#git diff fc52da3
+
+**8Removendo arquivos
+
+#git rm arq.html
+
+***Renomear e Remover arquivos - pag 55
+
+#git mv estilos.css principal.css ->Renomenado arquivo
+
+#git mv principal.js js/principal.js -> Movendo o arquivo para outro diretorio
+
+#git checkout -- arq -> Desfaz as alterações ainda não comitadas
+
+#git ckeckout -- arq ->Pode ser usado para recuperar arquivos removidos acidentalmente
+
+#git reset -- arq -> Retira arquivo da area do stage
+
+#git reset -- hard arq -> Descarta todas as alterações do arquivo
+
+#git revert --no-edit codigo -> Desfaz alterações ja comitadas.
+
+#git log --oneline -> Para verificar as alterações 
+
+**Capitulo 4 -Trabalhando com repositorios Remotos.
+
+
+
+
